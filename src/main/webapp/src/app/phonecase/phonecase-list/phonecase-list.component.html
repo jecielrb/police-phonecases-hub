@@ -1,0 +1,27 @@
+
+<h4>List of Phonecases</h4>
+<div >
+	<table class="table" >
+		<thead>
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">Name</th>
+				<th scope="col">Price</th>
+				<th scope="col">Quantity</th>
+				<th scope="col">EmployeeName</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let phonecase of phonecases">
+				<td>{{phonecase.id}}</td>
+				<td>{{phonecase.name}}</td>
+				<td>{{phonecase.price}}</td>
+				<td>{{phonecase.quantity}}</td>
+				<td>{{phonecase.employeeName}}</td>
+				<a href="/viewPhonecase" (click)="onPhonecaseDelete(phonecase.id)">DELETE</a>
+			</tr>
+		</tbody>
+		
+	</table>
+</div>

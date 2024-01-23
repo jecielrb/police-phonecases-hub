@@ -1,0 +1,27 @@
+.form-control{
+	color: rgba(0, 0, 0, .87);
+	border-bottom-color: rgba(0, 0, 0, .42);
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .009375em;
+	text-decoration: inherit;
+	text-transform: inherit;
+	align-self: flex-end;
+	box-sizing: border-box;
+	width: 100%;
+	transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 4px 4px 0 0;
+	background: #E4DCCF;
+	height: 56px;
+}
+
+.form-control:hover {
+	border-bottom-color: rgba(0, 0, 0, .87);
+	background: #ececec;
+}
+
+.form-control:focus {
+	border-color: #8D7B68;
+}

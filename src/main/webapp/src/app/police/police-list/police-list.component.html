@@ -1,0 +1,18 @@
+<h4>List of Police</h4>
+<table class="table" >
+		<thead>
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">Name</th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let police of policeVal">
+				<td>{{police.id}}</td>
+				<td>{{police.name}}</td>
+				<a href="/viewPolice" (click)="onPoliceDelete(police.id)">DELETE</a>
+			</tr>
+		</tbody>
+		
+	</table>
